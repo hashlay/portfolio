@@ -228,6 +228,74 @@ gsap.to('.timeline', {
   ease: "none"
 });
 
+/* ============ MOBILE DRAWER ============ */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+const drawerClose = document.getElementById('drawer-close');
+const drawerLinks = document.querySelectorAll('.drawer-link');
+const drawerSocials = document.querySelectorAll('.drawer-socials a');
+const drawerResume = document.querySelector('.drawer-resume');
+
+function openDrawer() {
+  if (!drawer) return;
+  drawer.classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  // Sync active state with current scroll position
+  const scrollY = window.scrollY;
+  const allSections = document.querySelectorAll('section');
+  let activeId = '';
+  allSections.forEach(sec => {
+    const top = sec.offsetTop - 200;
+    const bottom = top + sec.offsetHeight;
+    if (scrollY >= top && scrollY < bottom) activeId = sec.id;
+  });
+  drawerLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + activeId) link.classList.add('active');
+  });
+
+  // GSAP staggered entrance for links
+  gsap.fromTo(drawerLinks,
+    { opacity: 0, y: 24 },
+    { opacity: 1, y: 0, duration: 0.4, stagger: 0.06, ease: 'power3.out', delay: 0.1 }
+  );
+  // Close button spin-in
+  gsap.fromTo(drawerClose,
+    { opacity: 0, scale: 0.8, rotation: -90 },
+    { opacity: 1, scale: 1, rotation: 0, duration: 0.4, ease: 'back.out(1.7)', delay: 0.05 }
+  );
+  // Social icons fade in
+  gsap.fromTo(drawerSocials,
+    { opacity: 0, y: 12 },
+    { opacity: 1, y: 0, duration: 0.3, stagger: 0.04, ease: 'power2.out', delay: 0.35 }
+  );
+  // Resume button fade in
+  if (drawerResume) {
+    gsap.fromTo(drawerResume,
+      { opacity: 0, y: 12 },
+      { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out', delay: 0.5 }
+    );
+  }
+}
+
+function closeDrawer() {
+  if (!drawer) return;
+  drawer.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+if (burger && drawer && drawerClose) {
+  burger.addEventListener('click', openDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  drawer.addEventListener('click', (e) => {
+    if (e.target === drawer) closeDrawer();
+  });
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', () => closeDrawer());
+  });
+}
+
 /* ============ NAV ACTIVE STATE & HIDE ============ */
 const nav = document.getElementById('nav');
 let lastY = 0;
@@ -392,6 +460,7 @@ if (canvas) {
     const scale = Math.max(cw / iw, ch / ih);
     const dw = iw * scale;
     const dh = ih * scale;
+    // Always center horizontally
     const dx = (cw - dw) / 2;
     const dy = (ch - dh) / 2;
 
