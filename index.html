@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Hashim — Founder, HASHLAY</title>
+  <meta name="description"
+    content="Muhammad Hashim — Founder of HASHLAY, full-stack developer and product builder. Building scalable web applications, SaaS platforms and digital brands.">
+  <meta property="og:title" content="Muhammad Hashim — Founder, HASHLAY">
+  <meta property="og:description" content="Building software, creating brands, and solving real-world problems.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ SCROLL-DRIVEN IMAGE SEQUENCE BACKGROUND ============ -->
+  <canvas id="frame-canvas"></canvas>
+
+  <div id="cursor"></div>
+
+  <div id="loader">
+    <div class="loader-mark">
+      <img src="assets/image_1.png" alt="MH Logo" style="width: 160px; height: auto; object-fit: contain;">
+    </div>
+    <div class="loader-text" id="loader-text">Initializing Portfolio...</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill" id="loader-fill"></div>
+    </div>
+    <div class="loader-pct" id="loader-pct">0%</div>
+  </div>
+
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Muhammad Hashim<span>.</span></a>
+    <div class="nav-links">
+      <a href="#hero" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#stack">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <div class="nav-burger" id="burger"><span></span></div>
+  </nav>
+
+  <div id="drawer">
+    <div id="drawer-panel">
+      <div id="drawer-close">✕</div>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#stack">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div id="hero-bg"><canvas id="particle-canvas"></canvas></div>
+    <div class="hero-grid"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <div class="hero-greet reveal"><span class="dot"></span>Hi, I'm</div>
+        <h1 class="hero-name">
+          <span class="maskline"><span id="hero-title-1" style="display: inline-block;">MUHAMMAD</span></span>
+          <span class="maskline"><span id="hero-title-2" style="display: inline-block;">HASHIM</span></span>
+        </h1>
+        <div class="hero-roles reveal-stag" id="roles">
+          <span>Founder of HASHLAY</span>
+          <span>Full Stack Developer</span>
+          <span>CSE Student</span>
+          <span>Entrepreneur</span>
+        </div>
+        <p class="hero-headline reveal">Building software, creating brands, and solving real&#8209;world problems.</p>
+        <p class="hero-desc reveal">I build scalable web applications, SaaS platforms, management systems, and digital
+          products that combine clean engineering with business thinking. Alongside my engineering journey, I'm building
+          HASHLAY and turning ideas into products that create real impact.</p>
+        <div class="hero-btns reveal-stag">
+          <a href="#projects" class="btn btn-primary magnetic">View Projects →</a>
+          <a href="#contact" class="btn btn-secondary magnetic">Let's Connect</a>
+          <a href="resume.html" target="_blank" class="btn btn-outline magnetic">Download Resume</a>
+        </div>
+        <div class="hero-avail reveal"><span class="pulse-dot"></span>Available for freelance projects &amp;
+          collaborations</div>
+      </div>
+      <div class="hero-right reveal">
+        <img class="hero-logo-bg" src="assets/image_1.png" alt="">
+        <div class="portrait-frame">
+          <img src="assets/image_2_edited.png" alt="Muhammad Hashim">
+          <div class="portrait-glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="eyebrow">About</div>
+          <p class="about-lead">Eighteen and building — not waiting for permission to start.</p>
+        </div>
+        <div class="about-body reveal">
+          <p>My engineering journey didn't begin in a classroom — it began with curiosity about how the products I used
+            every day were actually built, and a restlessness to build something of my own instead of just studying how
+            others did it. That curiosity turned into late nights learning to code, and eventually into
+            <strong>HASHLAY</strong>, a sneaker care brand I founded, designed, and shipped end to end.
+          </p>
+          <p>Somewhere along the way, being a developer stopped being enough. I started thinking in terms of
+            <strong>products</strong> — who they're for, what problem they remove, whether they can survive contact with
+            real users and real money. That shift is what pulls me toward founder thinking as much as engineering:
+            writing the code is one part of the job; understanding why it needs to exist is the rest of it.
+          </p>
+          <p>I'm currently a Computer Science Engineering student, eighteen years old, splitting my time between
+            coursework, client and personal builds, and HASHLAY — treating each as a different rep of the same skill:
+            taking something from an unclear idea to a working, usable thing. I don't have it all figured out, and I
+            don't think that's the point. I'd rather keep building, keep shipping, and keep learning by doing.</p>
+          <div class="about-tag-row">
+            <span>Product Thinking</span><span>Founder Mindset</span><span>Continuous Learning</span><span>Real-world
+              Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISION + STATS ============ -->
+  <section id="vision">
+    <div class="wrap">
+      <div class="eyebrow reveal">Vision</div>
+      <div class="vision-wrap reveal">
+        <p class="vision-quote">I believe software should <em>simplify life</em>, empower businesses, and solve
+          meaningful problems. My long-term vision is to build products that improve everyday experiences through
+          <em>thoughtful design</em>, scalable engineering, and continuous innovation.
+        </p>
+      </div>
+      <div class="stats-row reveal-stag" id="stats">
+        <div class="stat-cell">
+          <div class="stat-num" data-count="10" data-suffix="+">10+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num" data-count="5" data-suffix="+">5+</div>
+          <div class="stat-label">Modern Platforms</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num" data-count="15" data-suffix="+">15+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num"><span>&#8734;</span></div>
+          <div class="stat-label">Learning Every Day</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I BUILD ============ -->
+  <section id="build">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">What I Build</div>
+        <h2 class="sec-title">Products across the stack — from storefront to admin panel.</h2>
+      </div>
+      <div class="bento reveal-stag" id="bento">
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg></div>
+          <h3>Business Websites</h3>
+          <p>Fast, conversion-focused sites that carry a brand's identity, not a template's.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg></div>
+          <h3>SaaS Platforms</h3>
+          <p>Subscription-driven products built for scale from the first line of code.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+              <line x1="12" y1="11" x2="12" y2="17" />
+              <line x1="9" y1="14" x2="15" y2="14" />
+            </svg></div>
+          <h3>Management Systems</h3>
+          <p>Internal tools that turn messy operations into clean, trackable workflows.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <path d="M8 14h.01" />
+              <path d="M12 14h.01" />
+              <path d="M16 14h.01" />
+              <path d="M8 18h.01" />
+              <path d="M12 18h.01" />
+              <path d="M16 18h.01" />
+            </svg></div>
+          <h3>Festival Management Systems</h3>
+          <p>Registration, scheduling and coordination software for large-scale events.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg></div>
+          <h3>E-Commerce</h3>
+          <p>Storefronts with real cart, payment and fulfilment logic — not mockups.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg></div>
+          <h3>Admin Dashboards</h3>
+          <p>Clear, data-dense interfaces built for the people who run the business.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="9" height="9" rx="1" />
+              <rect x="13" y="2" width="9" height="9" rx="1" />
+              <rect x="2" y="13" width="9" height="9" rx="1" />
+              <rect x="13" y="13" width="9" height="9" rx="1" />
+            </svg></div>
+          <h3>Digital Platforms</h3>
+          <p>Multi-sided products connecting citizens, admins, and services in one place.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg></div>
+          <h3>AI Integrations</h3>
+          <p>Practical AI features layered into products — support, search, generation.</p>
+        </div>
+        <div class="bento-card" data-tilt>
+          <div class="bento-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg></div>
+          <h3>Responsive Web Apps</h3>
+          <p>Interfaces engineered to feel native on any screen, at any size.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Featured Work</div>
+        <h2 class="sec-title">Case studies, not screenshots.</h2>
+        <p class="sec-sub">A closer look at what I've built — the problem, the thinking, and the product that shipped.
+        </p>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-visual">
+          <div class="glow"></div>
+          <div class="glyph">HASHLAY<br>Festival Management System</div>
+        </div>
+        <div>
+          <div class="proj-tag">01 — Event Tech</div>
+          <h3 class="proj-title">HASHLAY Festival Management System</h3>
+          <p class="proj-desc">A platform built to take festival organisers from scattered spreadsheets to a single
+            system of record — covering registration, scheduling, and on-ground coordination.</p>
+          <div class="proj-meta">
+            <div>
+              <h4>Problem</h4>
+              <p>Event logistics were spread across chat threads and manual sheets, causing errors during execution.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A centralised admin system with real-time updates and structured event workflows.</p>
+            </div>
+            <div>
+              <h4>Challenges</h4>
+              <p>Designing data structures flexible enough for very different event formats.</p>
+            </div>
+            <div>
+              <h4>Results</h4>
+              <p>Smoother coordination and a reusable system for future events.</p>
+            </div>
+          </div>
+          <div class="proj-stack"><span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Tailwind</span>
+          </div>
+          <div class="proj-links"><a href="#">Live Demo →</a><a href="#">GitHub →</a><a href="#">Case Study →</a></div>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-visual">
+          <div class="glow"></div><img src="assets/gramconnect.jpg" alt="GramConnect Interface"
+            style="width: 100%; height: 120%; object-fit: cover; position: absolute; top: -10%; left: 0; z-index: 1;">
+        </div>
+        <div>
+          <div class="proj-tag">02 — Civic Tech</div>
+          <h3 class="proj-title">GramConnect — Digital Panchayat</h3>
+          <p class="proj-desc">A civic technology platform bringing panchayat services online for rural Karnataka —
+            built with a modern UI and a dedicated admin system underneath.</p>
+          <div class="proj-meta">
+            <div>
+              <h4>Overview</h4>
+              <p>Digitising local governance services for citizens and administrators.</p>
+            </div>
+            <div>
+              <h4>Interface</h4>
+              <p>Modern, responsive UI designed for first-time digital users.</p>
+            </div>
+            <div>
+              <h4>System</h4>
+              <p>Dedicated admin panel for panchayat staff to manage requests.</p>
+            </div>
+            <div>
+              <h4>Focus</h4>
+              <p>Accessibility and clarity over visual complexity.</p>
+            </div>
+          </div>
+          <div class="proj-stack"><span>React</span><span>Firebase</span><span>Tailwind</span></div>
+          <div class="proj-links"><a href="https://gram-connect-orcin.vercel.app/en/home" target="_blank"
+              rel="noopener">Live Demo →</a><a href="#">Case Study →</a><a href="#">GitHub →</a></div>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-visual">
+          <div class="glow"></div><img src="assets/ecommerce.jpg" alt="HASHLAY E-Commerce"
+            style="width: 100%; height: 120%; object-fit: cover; position: absolute; top: -10%; left: 0; z-index: 1;">
+        </div>
+        <div>
+          <div class="proj-tag">03 — E-Commerce</div>
+          <h3 class="proj-title">HASHLAY E-Commerce</h3>
+          <p class="proj-desc">The storefront for my own sneaker care brand — a premium shopping experience with a
+            product showcase built for speed and clarity.</p>
+          <div class="proj-meta">
+            <div>
+              <h4>Overview</h4>
+              <p>Full storefront with cart, checkout and order tracking.</p>
+            </div>
+            <div>
+              <h4>Experience</h4>
+              <p>Premium, fast, and fully responsive across devices.</p>
+            </div>
+          </div>
+          <div class="proj-stack"><span>HTML/JS</span><span>Razorpay</span><span>Cloudinary</span></div>
+          <div class="proj-links"><a href="https://www.hashlay.in/" target="_blank" rel="noopener">Live Demo →</a><a
+              href="#">Case Study →</a></div>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-visual">
+          <div class="glow"></div><img src="assets/dashboard.jpg" alt="Result Publishing Dashboard"
+            style="width: 100%; height: 120%; object-fit: cover; position: absolute; top: -10%; left: 0; z-index: 1;">
+        </div>
+        <div>
+          <div class="proj-tag">04 — Data Platform</div>
+          <h3 class="proj-title">Result Publishing Platform</h3>
+          <p class="proj-desc">A performance-focused platform for publishing and searching results at speed, backed by a
+            clean admin dashboard.</p>
+          <div class="proj-meta">
+            <div>
+              <h4>Search</h4>
+              <p>Fast lookups built for high-traffic result days.</p>
+            </div>
+            <div>
+              <h4>Admin</h4>
+              <p>Dashboard for publishing and managing records.</p>
+            </div>
+          </div>
+          <div class="proj-stack"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <div class="proj-links"><a href="https://ssf-ninthikal-five.vercel.app/" target="_blank" rel="noopener">Live
+              Demo →</a><a href="#">Case Study →</a><a href="#">GitHub →</a></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="eyebrow" style="margin-top:20px;">Currently Building</div>
+        <div class="building-row reveal-stag" id="building">
+          <div class="building-card"><span class="bstat">In Progress</span>
+            <h4>HASHLAY SaaS</h4>
+            <p>Turning brand operations into a reusable software product.</p>
+          </div>
+          <div class="building-card"><span class="bstat">Exploring</span>
+            <h4>AI Products</h4>
+            <p>Practical AI-driven tools for real workflows.</p>
+          </div>
+          <div class="building-card"><span class="bstat">In Progress</span>
+            <h4>Digital Platforms</h4>
+            <p>Multi-sided platforms connecting people and services.</p>
+          </div>
+          <div class="building-card"><span class="bstat">Planned</span>
+            <h4>Mobile Apps</h4>
+            <p>Extending HASHLAY and future products to native mobile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section id="stack">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Technology</div>
+        <h2 class="sec-title">The stack behind the products.</h2>
+      </div>
+      <div class="stack-cats reveal-stag" id="stackcats">
+        <div class="stack-cat">
+          <h4>Frontend</h4>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Next.js / React</span><span>92%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="92" style="width: 92%;"></div>
+            </div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>TypeScript</span><span>85%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="85" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Tailwind CSS</span><span>90%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="90" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stack-cat">
+          <h4>Backend &amp; Database</h4>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Node.js / Express</span><span>84%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="84" style="width: 84%;"></div>
+            </div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>MongoDB</span><span>82%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="82" style="width: 82%;"></div>
+            </div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Firebase</span><span>80%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="80" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stack-cat">
+          <h4>Cloud, Design &amp; Tools</h4>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Vercel / GitHub</span><span>88%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="88" style="width: 88%;"></div>
+            </div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Figma</span><span>78%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="78" style="width: 78%;"></div>
+            </div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-top"><span>Cloudinary / VS Code</span><span>86%</span></div>
+            <div class="stack-bar">
+              <div class="stack-bar-fill" data-w="86" style="width: 86%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="journey">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Journey</div>
+        <h2 class="sec-title">From curiosity to company.</h2>
+      </div>
+      <div class="timeline reveal" id="timeline">
+        <div class="t-item done">
+          <div class="t-dot"></div>
+          <div class="t-year">School</div>
+          <div class="t-title">Where the curiosity started</div>
+          <div class="t-desc">First contact with computers and the question of how the software I used was actually
+            built.</div>
+        </div>
+        <div class="t-item done">
+          <div class="t-dot"></div>
+          <div class="t-year">Started Engineering</div>
+          <div class="t-title">Computer Science Engineering</div>
+          <div class="t-desc">Began formal study while teaching myself to build in parallel — treating each as practice
+            for the other.</div>
+        </div>
+        <div class="t-item done">
+          <div class="t-dot"></div>
+          <div class="t-year">Founded HASHLAY</div>
+          <div class="t-title">Turned a product idea into a brand</div>
+          <div class="t-desc">Started HASHLAY, a sneaker care brand, taking on product, design, and web development
+            myself.</div>
+        </div>
+        <div class="t-item done">
+          <div class="t-dot"></div>
+          <div class="t-year">Built GramConnect</div>
+          <div class="t-title">First civic tech platform</div>
+          <div class="t-desc">Built a Digital Panchayat platform to bring local governance services online.</div>
+        </div>
+        <div class="t-item done">
+          <div class="t-dot"></div>
+          <div class="t-year">Festival Management System</div>
+          <div class="t-title">Event tech, built for real coordination</div>
+          <div class="t-desc">Designed and shipped a system to manage festival logistics end to end.</div>
+        </div>
+        <div class="t-item done">
+          <div class="t-dot"></div>
+          <div class="t-year">HASHLAY E-Commerce</div>
+          <div class="t-title">The storefront went live</div>
+          <div class="t-desc">Launched the HASHLAY online store with full checkout and order tracking.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-year">Future</div>
+          <div class="t-title">AI Products &amp; beyond</div>
+          <div class="t-desc">Building toward AI-driven products and a HASHLAY SaaS platform.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Services</div>
+        <h2 class="sec-title">How I can help you build.</h2>
+      </div>
+      <div class="services-grid reveal-stag" id="services-grid">
+        <div class="service-card" data-tilt>
+          <div class="service-num">01</div>
+          <h3>Custom Software</h3>
+          <p>Purpose-built systems designed around how your business actually works.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">02</div>
+          <h3>Business Websites</h3>
+          <p>Fast, distinctive sites that represent your brand — not a template.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">03</div>
+          <h3>Management Systems</h3>
+          <p>Tools that bring order to operations, records, and internal workflows.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">04</div>
+          <h3>Dashboards</h3>
+          <p>Clear, data-dense interfaces for the people who run the business day to day.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">05</div>
+          <h3>UI/UX Design</h3>
+          <p>Interfaces designed for clarity first, decoration second.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">06</div>
+          <h3>API Development</h3>
+          <p>Reliable, well-documented APIs that connect your systems together.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">07</div>
+          <h3>AI Integration</h3>
+          <p>Practical AI features layered into real product workflows.</p>
+        </div>
+        <div class="service-card" data-tilt>
+          <div class="service-num">08</div>
+          <h3>Technical Consultation</h3>
+          <p>An outside eye on architecture, stack choices, and product direction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Why Work With Me</div>
+        <h2 class="sec-title">Engineering with business thinking attached.</h2>
+      </div>
+      <div class="compare reveal">
+        <div class="compare-col">
+          <div class="compare-head">Others</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+              </svg></span>Template-driven</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+              </svg></span>Generic solutions</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+              </svg></span>Basic UI</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+              </svg></span>Developer thinking only</div>
+        </div>
+        <div class="compare-col me">
+          <div class="compare-head">Working With Me</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg></span>Business thinking, built in</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg></span>Scalable, future-ready architecture</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg></span>Modern, premium UI</div>
+          <div class="compare-item"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg></span>Performance-focused, product mindset</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEYOND CODING ============ -->
+  <section id="beyond">
+    <div class="wrap">
+      <div class="beyond-grid">
+        <div class="reveal">
+          <div class="eyebrow">Beyond Coding</div>
+          <p class="beyond-quote">HASHLAY isn't a side project — it's where I practice building a business, not just a
+            website.</p>
+          <div class="beyond-body">
+            <p>Outside of writing code, I spend a lot of my time thinking like a founder: sourcing and shaping products,
+              figuring out how a brand should sound and look, and learning the parts of running a company that nobody
+              teaches in a syllabus — pricing, packaging, customer trust, and the small operational details that decide
+              whether a business actually works.</p>
+            <p>That entrepreneurial half is what keeps my engineering grounded. I'm not building features for their own
+              sake; I'm building things that need to hold up in front of real customers, real payments, and real
+              feedback. It's a slower, harder way to learn — and the one that's taught me the most.</p>
+          </div>
+          <div class="beyond-tags"><span>Entrepreneurship</span><span>Brand Building</span><span>Continuous
+              Learning</span><span>Creating Impact</span></div>
+        </div>
+        <div class="beyond-visual reveal">
+          <img src="assets/image_2_edited.png" alt="Muhammad Hashim"
+            style="width:100%;height:100%;object-fit:cover;border-radius:22px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="eyebrow">Contact</div>
+          <h2 class="contact-head">Let's build something meaningful together.</h2>
+          <p style="color:var(--muted);font-size:15.5px;line-height:1.8;max-width:420px;">Have a project in mind, or
+            just want to talk product and engineering? My inbox is open.</p>
+          <div class="contact-info">
+            <a href="mailto:hashimmucchila313@gmail.com"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg></span>hashimmucchila313@gmail.com</a>
+            <a href="tel:+917483138340"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg></span>+91 74831 38340</a>
+            <a href="https://wa.me/917483138340" target="_blank" rel="noopener"><span class="ic"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                </svg></span>WhatsApp — +91 74831 38340</a>
+            <a href="https://instagram.com/hash_.im__" target="_blank" rel="noopener"><span class="ic"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg></span>@hash_.im__</a>
+          </div>
+        </div>
+        <form class="form-card reveal" id="contact-form">
+          <input type="hidden" name="access_key" value="f67923fc-40c7-4b43-b05d-735f58ecd1c2">
+          <input type="hidden" name="subject" value="New Portfolio Contact — Muhammad Hashim">
+          <input type="hidden" name="from_name" value="Portfolio Contact Form">
+          <input type="checkbox" name="botcheck" style="display:none;">
+          <div class="form-row">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text"
+                placeholder="Your name" required></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email"
+                placeholder="you@email.com" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-company">Company (Optional)</label><input id="f-company" name="company"
+                type="text" placeholder="Company name"></div>
+            <div class="field"><label for="f-budget">Budget (Optional)</label><input id="f-budget" name="budget"
+                type="text" placeholder="e.g. ₹20,000 – ₹50,000"></div>
+          </div>
+          <div class="field"><label for="f-details">Project Details</label><input id="f-details" name="project_details"
+              type="text" placeholder="What are you looking to build?"></div>
+          <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message"
+              placeholder="Tell me a bit more..." required></textarea></div>
+          <button type="submit" class="submit-btn magnetic">Send Message →</button>
+          <p class="form-note">I usually reply within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot-inner">
+      <div class="foot-left">
+        <p class="sig">Crafted with passion, precision, and purpose.</p>
+        <p>— Muhammad Hashim · © 2026 All Rights Reserved.</p>
+      </div>
+      <div class="foot-social">
+        <a href="https://instagram.com/hash_.im__" target="_blank" rel="noopener" aria-label="Instagram"><svg
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg></a>
+        <a href="mailto:hashimmucchila313@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg"
+            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg></a>
+        <a href="https://wa.me/917483138340" target="_blank" rel="noopener" aria-label="WhatsApp"><svg
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+          </svg></a>
+      </div>
+      <div id="totop" aria-label="Back to top" role="button" tabindex="0">↑</div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

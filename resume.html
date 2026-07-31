@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Hashim — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..900&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --accent: #1E6FD9;
+      --accent2: #0f4c8a;
+      --border: #e5e7eb;
+      --section-gap: 28px;
+    }
+
+    @media print {
+      @page {
+        margin: 0.55in 0.6in;
+        size: A4;
+      }
+
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      font-size: 13px;
+      line-height: 1.55;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 32px;
+    }
+
+    /* ---------- Header ---------- */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 22px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: var(--section-gap);
+    }
+
+    .header-left h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .header-left .tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .header-right a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .header-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Sections ---------- */
+    .section {
+      margin-bottom: var(--section-gap);
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ---------- Summary ---------- */
+    .summary {
+      font-size: 13.5px;
+      color: #374151;
+      line-height: 1.7;
+    }
+
+    /* ---------- Experience / Projects ---------- */
+    .entry {
+      margin-bottom: 18px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .entry-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .entry-date {
+      font-size: 11.5px;
+      color: var(--muted);
+      font-family: 'Space Grotesk', sans-serif;
+      white-space: nowrap;
+    }
+
+    .entry-subtitle {
+      font-size: 12.5px;
+      color: var(--accent2);
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .entry-desc {
+      color: #4b5563;
+      font-size: 12.5px;
+      line-height: 1.65;
+    }
+
+    .entry-desc ul {
+      padding-left: 16px;
+      margin-top: 4px;
+    }
+
+    .entry-desc li {
+      margin-bottom: 3px;
+    }
+
+    .entry-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .entry-tags span {
+      font-size: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--accent);
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+
+    /* ---------- Skills Grid ---------- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px 24px;
+    }
+
+    .skill-cat h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .skill-cat p {
+      font-size: 12.5px;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+
+    /* ---------- Two Column ---------- */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    /* ---------- Print Button ---------- */
+    .print-bar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .print-btn {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #1E6FD9, #1558ab);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 8px 24px -6px rgba(30, 111, 217, .5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .print-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -6px rgba(30, 111, 217, .65);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Muhammad Hashim</h1>
+      <div class="tagline">Founder & Full Stack Developer</div>
+    </div>
+    <div class="header-right">
+      <div>hashimmucchila313@gmail.com</div>
+      <div>+91 74831 38340</div>
+      <div><a href="https://www.hashlay.in" target="_blank">hashlay.in</a></div>
+      <div><a href="https://instagram.com/hash_.im__" target="_blank">@hash_.im__</a></div>
+    </div>
+  </div>
+
+  <!-- ===== SUMMARY ===== -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      18-year-old Computer Science Engineering student, founder of HASHLAY, and full-stack developer with a
+      product-first mindset. I build scalable web applications, SaaS platforms, management systems, and digital products
+      that combine clean engineering with business thinking. Experienced in shipping end-to-end products — from idea to
+      deployment — across e-commerce, civic tech, event management, and data platforms.
+    </p>
+  </div>
+
+  <!-- ===== SKILLS ===== -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <h4>Frontend</h4>
+        <p>Next.js, React, TypeScript, Tailwind CSS, HTML/CSS, JavaScript</p>
+      </div>
+      <div class="skill-cat">
+        <h4>Backend & Database</h4>
+        <p>Node.js, Express.js, MongoDB, Firebase, REST APIs</p>
+      </div>
+      <div class="skill-cat">
+        <h4>Tools & Cloud</h4>
+        <p>Vercel, GitHub, Figma, Cloudinary, VS Code, Razorpay</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <div class="section">
+    <div class="section-title">Entrepreneurial Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Founder & Developer — HASHLAY</div>
+        <div class="entry-date">2024 — Present</div>
+      </div>
+      <div class="entry-subtitle">Sneaker Care Brand & Digital Product Company</div>
+      <div class="entry-desc">
+        <ul>
+          <li>Founded and built HASHLAY from scratch — a sneaker care brand with its own product line, branding, and
+            e-commerce storefront.</li>
+          <li>Designed, developed, and shipped the full online store with product showcase, cart, Razorpay checkout, and
+            order tracking.</li>
+          <li>Handle end-to-end operations: product sourcing, brand identity, packaging design, web development, and
+            customer experience.</li>
+          <li>Building toward a HASHLAY SaaS platform to turn brand operations into reusable software.</li>
+        </ul>
+        <div class="entry-tags">
+          <span>HTML/JS</span><span>Razorpay</span><span>Cloudinary</span><span>Product Design</span><span>Brand
+            Building</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <div class="section">
+    <div class="section-title">Featured Projects</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">HASHLAY Festival Management System</div>
+        <div class="entry-date">Event Tech</div>
+      </div>
+      <div class="entry-desc">
+        <ul>
+          <li>Centralised admin platform replacing spreadsheets and chat threads for festival logistics management.</li>
+          <li>Built real-time event workflows covering registration, scheduling, and on-ground coordination.</li>
+          <li>Designed flexible data structures to handle diverse event formats.</li>
+        </ul>
+        <div class="entry-tags">
+          <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">GramConnect — Digital Panchayat Platform</div>
+        <div class="entry-date">Civic Tech</div>
+      </div>
+      <div class="entry-desc">
+        <ul>
+          <li>Civic technology platform bringing panchayat services online for rural Karnataka.</li>
+          <li>Built a modern, accessible UI designed for first-time digital users.</li>
+          <li>Developed a dedicated admin panel for panchayat staff to manage citizen requests.</li>
+        </ul>
+        <div class="entry-tags">
+          <span>React</span><span>Firebase</span><span>Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Result Publishing Platform</div>
+        <div class="entry-date">Data Platform</div>
+      </div>
+      <div class="entry-desc">
+        <ul>
+          <li>Performance-focused platform for publishing and searching results at speed during high-traffic days.</li>
+          <li>Built a clean admin dashboard for publishing and managing records.</li>
+        </ul>
+        <div class="entry-tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EDUCATION & EXTRAS ===== -->
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">B.E. Computer Science Engineering</div>
+        </div>
+        <div class="entry-subtitle">Currently Pursuing</div>
+        <div class="entry-desc">
+          Splitting time between coursework, client builds, personal projects, and HASHLAY — treating each as practice
+          for building real, usable products.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">What I Offer</div>
+      <div class="entry">
+        <div class="entry-desc">
+          <ul>
+            <li>Custom Software & Web Applications</li>
+            <li>Business Websites & E-Commerce</li>
+            <li>Management Systems & Admin Dashboards</li>
+            <li>SaaS & Digital Platform Development</li>
+            <li>UI/UX Design & API Development</li>
+            <li>AI Integration & Technical Consultation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CURRENTLY BUILDING ===== -->
+  <div class="section">
+    <div class="section-title">Currently Building</div>
+    <div class="entry-desc">
+      <strong style="color:var(--text);">HASHLAY SaaS</strong> — Turning brand operations into reusable software ·
+      <strong style="color:var(--text);">AI Products</strong> — Practical AI-driven tools for real workflows ·
+      <strong style="color:var(--text);">Digital Platforms</strong> — Multi-sided platforms connecting people and
+      services ·
+      <strong style="color:var(--text);">Mobile Apps</strong> — Extending products to native mobile
+    </div>
+  </div>
+
+  <!-- ===== PRINT BUTTON ===== -->
+  <div class="print-bar no-print">
+    <button class="print-btn" onclick="window.print()">⬇ Download as PDF</button>
+  </div>
+
+</body>
+
+</html>
